@@ -31,7 +31,7 @@ A static IP address is an IP address that doesn't change. We are going to be usi
 
 ![image](https://github.com/user-attachments/assets/c129f076-b3bd-426a-aad4-f9a4df701a52)
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Client-1 will establish connectivity with DC-1, and to confirm this connection, a ping test will be conducted from Client-1 to DC-1. In order for this to work, we will first login to DC-1 and turn of the domain,public, and private firewalls. Once that is applied, Client-1 should be able to successfully ping DC-1, confirming connectivity.
 </p>
 <br />
 

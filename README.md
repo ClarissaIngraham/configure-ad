@@ -5,11 +5,6 @@
 <h1> Active Directory Deployed in the Cloud (Azure)</h1>
 This tutorial outlines the implementation of Active Directory within Azure Virtual Machines.<br />
 
-
-<h2>Video Demonstration</h2>
-
-- ### [YouTube: How to Deploy Active Directory within Azure Compute](https://www.youtube.com)
-
 <h2>Environments and Technologies Used</h2>
 
 - Microsoft Azure (Virtual Machines/Compute)
@@ -22,15 +17,9 @@ This tutorial outlines the implementation of Active Directory within Azure Virtu
 - Windows Server 2022
 - Windows 10 (21H2)
 
-<h2>High-Level Deployment and Configuration Steps</h2>
-
-- Step 1
-- Step 2
-- Step 3
-- Step 4
-
 <h2>Deployment and Configuration Steps</h2>
 
+First we will create two VM's(Virtal Machines) with the same virtal network. One VM is function as a Domain Controller(DC-1) and the other VM will funtion as a Client machine (Client-1). We will assign a static IP address to the Domain Controller, as it will provide Active Directory services to the Client. The Client machine will be joined to the domain, and we will configure its DNS settings to use the Domain Controller as its DNS server.
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>

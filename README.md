@@ -57,6 +57,8 @@ Your screen should you look like the one below if AD is installed on your device
 <p>
 So now that we have installed Active Directory(AD), we will create Organizational Units (OU) with AD. We're going create two folders, one for employees called “_EMPLOYEES” and another for admins called “_ADMINS”.
 
-To do this, right-click on the domain area, select New > Organizational Unit, and enter the name and click okay. Next, open your newly created OU > right-click > select New > User > enter Jane Doe > assign her the role of Admin with the username Jane_admin. Finally, add Jane to the Domain Admins security group to grant her the appropriate permissions. You can use Jane_admin as the administrator account.
+To do this, right-click on the domain area, select New > Organizational Unit, and enter the name and click okay. Next, open your newly created OU > right-click > select New > User > enter Jane Doe > assign her the role of Admin with the username Jane_admin. Finally, we will add Jane to the Domain Admin to grant her the appropriate permissions. We can now use Jane_admin as the administrator account.
+
+![image](https://github.com/user-attachments/assets/7c8420c9-35b5-4d9e-bfcd-b2adab34b117)
 </p>
 <br />

@@ -65,3 +65,9 @@ To do this, right-click on the domain area, select New > Organizational Unit, an
 Next we will join Client-1 to the domain. To do this navigate to the system settings and select about. On the right, choose rename this PC (advanced), then select change under the domain settings. Enter "mydomain.com" as the domain name, followed by the credentials for "mydomain.com\labuser." After completing these steps, the system will restart, and Client-1 will be successfully joined to "mydomain.com."
 
 ![image](https://github.com/user-attachments/assets/119410dd-38b6-46ee-8535-417d69b1329a)
+
+Now Client-1 is successfully joined to the domain. Next, we’ll configure Remote Desktop access for non-administrative users on Client-1. Start by logging into Client-1 as an administrator right click on the windows button and click on system. While on that screen in the about section click on remote desktop > select users that can remotely access this PC and grant "domain users" access to Remote Desktop. 
+
+When these steps are submitted correctly, users will be able to log into Client-1 remotely.
+
+![image](https://github.com/user-attachments/assets/0c745116-e183-4867-8864-cc2d4e514442)

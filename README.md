@@ -61,4 +61,7 @@ To do this, right-click on the domain area, select New > Organizational Unit, an
 
 ![image](https://github.com/user-attachments/assets/7c8420c9-35b5-4d9e-bfcd-b2adab34b117)
 </p>
-<br />
+
+Next we will join Client-1 to the domain. To do this navigate to the system settings and select about. On the right, choose rename this PC (advanced), then select change under the domain settings. Enter "mydomain.com" as the domain name, followed by the credentials for "mydomain.com\labuser." After completing these steps, the system will restart, and Client-1 will be successfully joined to "mydomain.com."
+
+![image](https://github.com/user-attachments/assets/119410dd-38b6-46ee-8535-417d69b1329a)

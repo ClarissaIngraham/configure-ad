@@ -71,3 +71,9 @@ Now Client-1 is successfully joined to the domain. Next, we’ll configure Remot
 When these steps are submitted correctly, users will be able to log into Client-1 remotely.
 
 ![image](https://github.com/user-attachments/assets/0c745116-e183-4867-8864-cc2d4e514442)
+
+Last and not least we will now confirm that standard users can successfully access Client-1 via Remote Desktop. We will open up Powershell in Client-1 and we’ll use a PowerShell script to generate a large number of users in the domain. Once we have created the users, we will use one of the user's credentials to verify that we could log into Client-1 using the user's credentials.
+
+![image](https://github.com/user-attachments/assets/1722679e-20e2-4d4a-affc-f70f298ac7e2)
+
+![image](https://github.com/user-attachments/assets/39319d2f-c822-47e4-b46d-b6012f897260)

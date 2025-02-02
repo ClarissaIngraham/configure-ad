@@ -43,7 +43,11 @@ Client-1 will establish connectivity with DC-1, and to confirm this connection, 
 
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+We will not go back to our DC-1 VM and install Active Directory Domain Services. To proceed with this process we will click on the start icon > Server Manager > Add roles and features. When we get to the session of the installation where it says server roles, we will check off "Active Directory Domain Services" and then click add features then continue with the installation. 
+
+Next, promote the VM to a Domain Controller, set up a new forest with the domain name "mydomain.com," and then restart the system. After restarting, log back into DC-1 as the user "mydomain.com\labuser."
+
+Your screen you look like the one below if AD is installed on your device.
 </p>
 <br />
 
@@ -51,6 +55,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+So now that we have installed Active Directory(AD), we will create Organizational Units (OU) with AD. We're going create two folders, one for employees called “_EMPLOYEES” and another for admins called “_ADMINS”.
+
+To do this, right-click on the domain area, select New > Organizational Unit, and complete the required fields. Next, open your newly created OU -> right-click -> select New -> User -> enter Jane Doe -> assign her the role of Admin with the username Jane_admin. Finally, add Jane to the Domain Admins security group to grant her the appropriate permissions. You can use Jane_admin as the administrator account.
 </p>
 <br />

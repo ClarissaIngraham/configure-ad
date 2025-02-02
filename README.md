@@ -3,7 +3,7 @@
 </p>
 
 <h1> On-premises Active Directory Deployed in the Cloud (Azure)</h1>
-This tutorial outlines the implementation of Active Directory within Azure Virtual Machines.It covers the strategic steps required for integration and configuration, ensuring optimal functionality within a virtualized infrastructure. By following this tutorial, IT professionals will gain a clear understanding of how to extend on-premises capabilities securely in the cloud.<br />
+This tutorial outlines the implementation of Active Directory within Azure Virtual Machines.<br />
 
 <h2>Environments and Technologies Used</h2>
 

@@ -19,9 +19,9 @@ This tutorial outlines the implementation of Active Directory within Azure Virtu
 
 <h2>Deployment and Configuration Steps</h2>
 
-First we will create two VM's(Virtal Machines) with the same virtal network. One VM is function as a Domain Controller(DC-1) and the other VM will funtion as a Client machine (Client-1). We will assign a static IP address to the Domain Controller, as it will provide Active Directory services to the Client. The Client machine will be joined to the domain, and we will configure its DNS settings to use the Domain Controller as its DNS server.
+First we will create two VM's(Virtal Machines) with the same virtal network. One VM is function as a Domain Controller(DC-1) and the other VM will function as a Client machine (Client-1). We will assign a static IP address to the Domain Controller, as it will provide Active Directory Services to the Client. The Client machine will be joined to the domain, and we will configure its DNS settings to use the Domain Controller as its DNS server.
 
-A static IP address is an IP address that doesn't change. We are going to be using this because it is going to provide a consistent address for communication over the network for DC-1 because we are going to be using DC-1 as the server and as the DNS server for Client-1.
+A static IP address is an IP address that doesn't change. We are going to be using this because it is going to provide a consistent address for communication over the network for DC-1.
 <p>
   
 ![image](https://github.com/user-attachments/assets/a747979e-83b9-4721-830d-8d64e09157a7)
@@ -31,7 +31,7 @@ A static IP address is an IP address that doesn't change. We are going to be usi
 
 ![image](https://github.com/user-attachments/assets/c129f076-b3bd-426a-aad4-f9a4df701a52)
 
-Client-1 will establish connectivity with DC-1, and to confirm this connection, a ping test will be conducted from Client-1 to DC-1. In order for this to work, we will first login to DC-1 and turn of the domain,public, and private firewalls. Once that is applied, we are going to open up powershell in VM-Client-1 and we should be able to successfully ping DC-1, confirming connectivity. (Enter ping 10.0.0.4 in powershell)
+Now Client-1 will establish connectivity with DC-1, and to confirm this connection, a ping test will be conducted from Client-1 to DC-1. In order for this to work, we will first login to DC-1 and turn off the domain,public, and private firewalls. Once that is applied, we are going to open up Powershell in the VM-Client-1 and we should be able to successfully ping DC-1, confirming connectivity. (Enter ping 10.0.0.4 in Powershell)
 </p>
 
 <p>
@@ -42,9 +42,9 @@ Client-1 will establish connectivity with DC-1, and to confirm this connection, 
 
 </p>
 <p>
-We will not go back to our DC-1 VM and install Active Directory Domain Services. To proceed with this process we will click on the start icon > Server Manager > Add roles and features. When we get to the session of the installation where it says server roles, we will check off "Active Directory Domain Services" and then click add features then continue with the installation. 
+We will now go back to our DC-1 VM and install Active Directory Domain Services. To proceed with this process we will click on the start icon > Server Manager > Add roles and features. When we get to the section of the installation where it says server roles, we will check off "Active Directory Domain Services" and then click add features then continue with the installation. 
 
-Next, promote the VM to a Domain Controller, set up a new forest with the domain name "mydomain.com," and then restart the system. After restarting, log back into DC-1 as the user "mydomain.com\labuser."
+Next we will promote the VM to a Domain Controller, set up a new forest with the domain name "mydomain.com," and then restart the system. After restarting, log back into DC-1 as the user "mydomain.com\labuser."
 
 Your screen should you look like the one below if AD is installed on your device.
 </p>
@@ -72,7 +72,7 @@ When these steps are submitted correctly, users will be able to log into Client-
 
 ![image](https://github.com/user-attachments/assets/0c745116-e183-4867-8864-cc2d4e514442)
 
-Last and not least we will now confirm that standard users can successfully access Client-1 via Remote Desktop. We will open up Powershell in Client-1 and we’ll use a PowerShell script to generate a large number of users in the domain. Once we have created the users, we will use one of the user's credentials to verify that we could log into Client-1 using the user's credentials.
+Last but not least we will now confirm that standard users can successfully access Client-1 via Remote Desktop. We will open up Powershell in Client-1 and we’ll use a PowerShell script to generate a large number of users in the domain. Once we have created the users, we will use one of the user's credentials to verify that we could log into Client-1 using the user's credentials.
 
 ![image](https://github.com/user-attachments/assets/1722679e-20e2-4d4a-affc-f70f298ac7e2)
 
